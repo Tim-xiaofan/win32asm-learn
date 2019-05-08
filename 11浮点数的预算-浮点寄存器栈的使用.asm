@@ -12,7 +12,7 @@ scanf PROTO C:ptr sbyte, :VARARG
 .data					
 	;定义这些分段是把不同类型的数据或代码归类，放到不同的属性内存页中，dos下定义是赋值给寄存器
 fmt_out sbyte '%f', 0ah, 0
-a real8 3.2
+a real8 3.2 ;定义8字节（64位）浮点数
 b real8 2.6
 m real8 7.1
 f real8 ?
