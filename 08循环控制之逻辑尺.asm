@@ -46,3 +46,5 @@ print_result:
 main endp
 end main
 end start
+
+;z[i] = x[i]+y[i]或z[i] = x[i] - y[i],无规律
