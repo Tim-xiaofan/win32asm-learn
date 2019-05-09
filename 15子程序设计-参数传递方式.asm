@@ -21,8 +21,8 @@ scanf PROTO C:ptr sbyte, :VARARG
 .code					;所有指令都必须放在代码段，在可执行文件中，代码段放在_TEXT节区（区块）中）
 
 sub_pro1 proc ;使用堆栈传递参数
-    push ebp
-    mov ebp, esp
+    push ebp ;保护先前EBP指针， EBP入栈， ESP-=4h, ESP = NN - 10h
+    mov ebp, esp ;设置EBP指针指向栈顶
     mov eax, dword ptr [ebp + 8] ;取出第一个参数
     sub eax, dword ptr [ebp + 12] ;取出第二个参数, eax保存结果
     pop ebp
