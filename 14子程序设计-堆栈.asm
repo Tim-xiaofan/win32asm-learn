@@ -37,7 +37,7 @@ a10:
     mov edi, offset s_str
 a20:
     pop eax ;余数出栈
-    add al, '0'
+    add al, '0';转换为ASII码
     mov [edi], al
     inc edi
     loop a20
