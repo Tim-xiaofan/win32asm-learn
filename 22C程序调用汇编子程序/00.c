@@ -2,7 +2,6 @@
 c模块读入x, y，输出结果
 汇编模块读入a, b, 进行计算
 */
-#pragma comment(linker,"/NODEFAULTLIB:msvcrt.lib")
 
 #include "stdio.h"
 
