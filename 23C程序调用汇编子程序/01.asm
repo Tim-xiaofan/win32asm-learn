@@ -15,7 +15,7 @@ szText    sbyte	 'hello,world !',0ah, 0;字符窜以0结束
 ;代码段
 	.code					;所有指令都必须放在代码段，在可执行文件中，代码段放在_TEXT节区（区块）中）
 print  proc c
-    ;invoke printf, offset szText
+    ;invoke printf, offset szText ;报错：无法解析的外部符号_printf
     ret
 print endp
 end
