@@ -18,7 +18,3 @@ ret    8                          ;ret返回,弹出返回地址,ESP+=4, ESP=NN-0
 }
 看完汇编后,再看EBP和ESP的定义,哦,豁然开朗,
 原来ESP就是一直指向栈顶的指针,而EBP只是存取某时刻的栈顶指针,以方便对栈的操作,如获取函数参数、局部变量等
---------------------- 
-作者：zsjum 
-来源：CSDN 
-原文：https://blog.csdn.net/zsJum/article/details/6117043 
