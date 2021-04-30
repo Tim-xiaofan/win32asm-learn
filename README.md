@@ -4,4 +4,4 @@ win32汇编语言学习<br>
 # vs 2019 需要加入以下兼容库
 includelib ucrt.lib<br>
 includelib legacy_stdio_definitions.lib<br>
-否则会出现"LNK2019	无法解析的外部符号 _printf，函数 _main@0 中引用了该符号"的错误<br>
+否则会出现"LNK2019	无法解析的外部符号 _printf(_scanf)，函数 _main@0 中引用了该符号"的错误<br>
