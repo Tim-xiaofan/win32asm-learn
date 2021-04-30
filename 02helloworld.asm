@@ -6,6 +6,8 @@
 ;include 文件定义
 includelib msvcrt.lib   ;库文件
 printf PROTO C:ptr sbyte, :VARARG ;函数声明
+includelib ucrt.lib ;vs 2019
+includelib legacy_stdio_definitions.lib ;vs 2019
 
 ;数据段
 	.data					
