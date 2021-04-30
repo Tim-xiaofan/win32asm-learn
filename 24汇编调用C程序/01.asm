@@ -19,4 +19,4 @@ main proc C
 main endp
 end
 
-;抵用C函数，计算并输出x*x+y*y
+;调用C函数，计算并输出x*x+y*y
